@@ -13,9 +13,8 @@ print tabby_cat
 print persian_cat
 print backslash_cat
 print fat_cat
-n=1000
-while n>0:
-	for i in ["/","-","|","\\","|"]:
-		print "%s\r" % i,
-	n=n-1
-		
+n = 1000
+while n > 0:
+    for i in ["/", "-", "|", "\\", "|"]:
+        print "%s\r" % i,
+    n = n-1

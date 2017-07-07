@@ -6,5 +6,5 @@ print "How much weigh?",
 weight = raw_input()
 
 print "So, uyou're %r old, %r tall and %r heavy."%(
-	age, tall, weight)
+    age, tall, weight)
 print int(raw_input())*int(10)
