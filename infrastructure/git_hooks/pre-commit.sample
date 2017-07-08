@@ -1,0 +1,7 @@
+#!/bin/sh
+start_path=$(pwd)
+cd $(git rev-parse --git-dir)/..
+git diff --name-only --staged |xargs pylint --disable=missing-docstring,invalid-name,unbalanced-tuple-unpacking
+check=$(echo $?) 
+cd $start_path
+exit $check
